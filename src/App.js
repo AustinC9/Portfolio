@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Clock from "./Clock/Clock";
+import Stopwatch from "./Stopwatch/Stopwatch"
+import Weather from "./Weather/Weather"
+// import '/Users/austincarson/Sites/react_portfolio/src/Weather/Weather.css'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="card">
+      <h1>Digital Clock</h1>
+        <Clock />
+      </div>
+      <div className="card">
+      <h1>Stopwatch</h1>
+        <Stopwatch />
+      </div>
+      <main>
+
+      <div className="weatherApp card">
+        <Weather />
+      </div>
+      </main>
+
     </div>
   );
 }
